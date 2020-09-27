@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>chat</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>my chat proto :)</h1>
+    
+    <div class="main-area">
+      
+      <div class="writing-area">
+        <!--Поле для ввода сообщения-->
+        <input class="message j-message" type="text" placeholder="Здесь вводится текст сообщения">
+        
+        <!--Кнопка отправки сообщения-->
+        <button class="btn j-btn-send">
+          <div class="btn_text">Отправить</div>
+
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+          </svg>
+        </button>
+
+        <!--Кнопка получения данных геолокации-->
+        <button class="btn j-btn-geo">
+          <div class="btn_text">Геолокация</div>
+
+          <svg width="1em" height="1.0625em" viewBox="0 0 16 17" class="bi bi-compass" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+            <path d="M6.94 7.44l4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+          </svg>
+        </button>
+      </div>
+
+      <!--Область для отображения отправленных и полученных сообщений-->
+      <div class="reading-area j-reading-area"></div>
+
+    </div>
+   
+    <script src="./script.js"></script>
+  </body>
+</html>
+
